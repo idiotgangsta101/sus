@@ -1,14 +1,14 @@
 --[[
-Made by Pawel12d#0272
+Made by Pawel12d#0272 pasted by idiotgangsta101
 --]]
 
 local Hint = Instance.new("Hint", game.CoreGui)
-Hint.Text = "Hexagon | Waiting for the game to load..."
+Hint.Text = "wait"
 
 repeat wait() until game:IsLoaded()
 repeat wait() until game.Players.LocalPlayer.PlayerGui:FindFirstChild("GUI")
 
-Hint.Text = "Hexagon | Setting up environment..."
+Hint.Text = "please wait"
 
 -- Services
 local UserInputService = game:GetService("UserInputService")
@@ -29,44 +29,44 @@ if (listfiles == false) then return game.Players.LocalPlayer:Kick("Exploit not s
 if (isfolder == false) then return game.Players.LocalPlayer:Kick("Exploit not supported! Missing: isfolder.") end
 if (hookfunc == false) then return game.Players.LocalPlayer:Kick("Exploit not supported! Missing: hookfunc.") end
 
-Hint.Text = "Hexagon | Setting up configuration settings..."
+Hint.Text = "please dont touch anything"
 
-if not isfolder("hexagon") then
-	print("creating hexagon folder")
-	makefolder("hexagon")
+if not isfolder("sussyware") then
+	print("creating sussyware folder")
+	makefolder("sussyware")
 end
 
-if not isfolder("hexagon/configs") then
-	print("creating hexagon configs folder")
-	makefolder("hexagon/configs")
+if not isfolder("sussyware/configs") then
+	print("creating sussyware configs folder")
+	makefolder("sussyware/configs")
 end
 
-if not isfile("hexagon/autoload.txt") then
-	print("creating hexagon autoload file")
-	writefile("hexagon/autoload.txt", "")
+if not isfile("sussyware/autoload.txt") then
+	print("creating sussyware autoload file")
+	writefile("sussyware/autoload.txt", "")
 end
 
-if not isfile("hexagon/custom_skins.txt") then
-	print("downloading hexagon custom skins file")
-	writefile("hexagon/custom_skins.txt", game:HttpGet("https://raw.githubusercontent.com/Pawel12d/hexagon/main/scripts/default_data/custom_skins.txt"))
+if not isfile("sussyware/custom_skins.txt") then
+	print("downloading sussyware custom skins file")
+	writefile("sussyware/custom_skins.txt", game:HttpGet("https://raw.githubusercontent.com/idiotgangsta101/sus/main/scripts/default_data/custom_models.txt"))
 end
 
-if not isfile("hexagon/custom_models.txt") then
-	print("downloading hexagon custom models file")
-	writefile("hexagon/custom_models.txt", game:HttpGet("https://raw.githubusercontent.com/Pawel12d/hexagon/main/scripts/default_data/custom_models.txt"))
+if not isfile("sussyware/custom_models.txt") then
+	print("downloading sussyware custom models file")
+	writefile("sussyware/custom_models.txt", game:HttpGet("https://raw.githubusercontent.com//idiotgangsta101/sus/main/scripts/default_data/custom_models.txt"))
 end
 
-if not isfile("hexagon/inventories.txt") then
-	print("downloading hexagon inventories file")
-	writefile("hexagon/inventories.txt", game:HttpGet("https://raw.githubusercontent.com/Pawel12d/hexagon/main/scripts/default_data/inventories.txt"))
+if not isfile("sussyware/inventories.txt") then
+	print("downloading sussyware inventories file")
+	writefile("sussyware/inventories.txt", game:HttpGet("https://raw.githubusercontent.com//idiotgangsta101/sus/main/scripts/default_data/inventories.txt"))
 end
 
-if not isfile("hexagon/skyboxes.txt") then
-	print("downloading hexagon skyboxes file")
-	writefile("hexagon/skyboxes.txt", game:HttpGet("https://raw.githubusercontent.com/Pawel12d/hexagon/main/scripts/default_data/skyboxes.txt"))
+if not isfile("sussyware/skyboxes.txt") then
+	print("downloading sussyware skyboxes file")
+	writefile("sussyware/skyboxes.txt", game:HttpGet("https://raw.githubusercontent.com//idiotgangsta101/sus/main/scripts/default_data/skyboxes.txt"))
 end
 
-Hint.Text = "Hexagon | Loading..."
+Hint.Text = "JUSt wait PLZ"
 
 -- Viewmodels fix
 for i,v in pairs(game.ReplicatedStorage.Viewmodels:GetChildren()) do
@@ -88,8 +88,8 @@ local Hitboxes = {
 	["Legs"] = {"LeftUpperLeg", "LeftLowerLeg", "LeftFoot", "RightUpperLeg", "RightLowerLeg", "RightFoot"}
 }
 
-local HexagonFolder = Instance.new("Folder", workspace)
-HexagonFolder.Name = "HexagonFolder"
+local SussywareFolder = Instance.new("Folder", workspace)
+SussywareFolder.Name = "SussywareFolder"
 
 local oldOsPlatform = game.Players.LocalPlayer.OsPlatform
 local oldMusicT = game.Players.LocalPlayer.PlayerGui.Music.ValveT:Clone()
@@ -114,8 +114,8 @@ local FOVCircle = Drawing.new("Circle")
 local Cases = {}; for i,v in pairs(game.ReplicatedStorage.Cases:GetChildren()) do table.insert(Cases, v.Name) end
 
 local Configs = {}
-local Inventories = loadstring("return "..readfile("hexagon/inventories.txt"))()
-local Skyboxes = loadstring("return "..readfile("hexagon/skyboxes.txt"))()
+local Inventories = loadstring("return "..readfile("sussyware/inventories.txt"))()
+local Skyboxes = loadstring("return "..readfile("sussyware/skyboxes.txt"))()
 
 
 
@@ -131,8 +131,8 @@ local nocw_m = {}
 local curVel = 16
 local isBhopping = false
 
-local ESP = loadstring(game:HttpGet("https://raw.githubusercontent.com/Pawel12d/hexagon/main/scripts/ESP.lua"))()
-local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Pawel12d/hexagon/main/scripts/UILibrary.lua"))()
+local ESP = loadstring(game:HttpGet("https://raw.githubusercontent.com/idiotgangsta101/sus/main/scripts/ESP.lua"))()
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/idiotgangsta101/sus/main/scripts/UILibrary.lua"))()
 
 local Window = library:CreateWindow(Vector2.new(500, 500), Vector2.new((workspace.CurrentCamera.ViewportSize.X/2)-250, (workspace.CurrentCamera.ViewportSize.Y/2)-250))
 
@@ -1973,7 +1973,7 @@ Mouse.Move:Connect(function()
 	end
 end)
 
-Hint.Text = "Hexagon | Setting up hooks..."
+Hint.Text = "wait for dem hooks boi"
 
 hookfunc(getrenv().xpcall, function() end)
 
@@ -2185,9 +2185,9 @@ for i,v in pairs({"CT", "T"}) do
 	end)
 end
 
-if readfile("hexagon/autoload.txt") ~= "" and isfile("hexagon/configs/"..readfile("hexagon/autoload.txt")) then
+if readfile("sussyware/autoload.txt") ~= "" and isfile("sussyware/configs/"..readfile("sussyware/autoload.txt")) then
 	local a,b = pcall(function()
-		cfg = loadstring("return "..readfile("hexagon/configs/"..readfile("hexagon/autoload.txt")))()
+		cfg = loadstring("return "..readfile("sussyware/configs/"..readfile("sussyware/autoload.txt")))()
 	end)
 	
 	if a == false then
@@ -2197,9 +2197,9 @@ if readfile("hexagon/autoload.txt") ~= "" and isfile("hexagon/configs/"..readfil
 	end
 end
 
-print("Hexagon finished loading!")
+print("it done!")
 print("101 120 111 100 117 115") -- :)
 
-Hint.Text = "Hexagon | Loading finished!"
+Hint.Text = "now u can start gaming"
 wait(1.5)
 Hint:Destroy()
