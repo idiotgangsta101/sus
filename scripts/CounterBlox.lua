@@ -1523,8 +1523,8 @@ SettingsTabCategoryMain:AddButton("Server Rejoin", function()
     game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, game.JobId, LocalPlayer)
 end)
 
-SettingsTabCategoryMain:AddButton("Copy Discord Invite", function()
-	setclipboard("https://discord.gg/FdrQZ6sD5T")
+SettingsTabCategoryMain:AddButton("no invites for u", function()
+	setclipboard("i said no discord invite for u dipshit")
 end)
 
 SettingsTabCategoryMain:AddButton("Copy Roblox Game Invite", function()
