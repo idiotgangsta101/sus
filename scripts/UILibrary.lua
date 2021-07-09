@@ -155,24 +155,36 @@ local library = {
 	windows = {},
     pointers = {},
     settings = {
-        guiname = "Hexagon",
+        guiname = "sussyware",
 		title = "Hexagon [discontinued???]",
-		logo = "rbxassetid://4350178803", -- "http://www.roblox.com/asset/?id=6597976562",
-        footer = " Imagine pressing Copy Discord Invite.",
+        footer = "cool paste",
         modal = true,
         font = Enum.Font.SourceSans,
         textsize = 16,
         textstroke = true
     },
     theme = {
-        buttons = Color3.fromRGB(20, 200, 20), -- toggle, sliders colors
+        buttons = Color3.fromRGB(255, 0, 0), -- toggle, sliders colors
         text = Color3.fromRGB(235, 235, 235),
         textboxtext = Color3.fromRGB(145, 145, 145),
         main = Color3.fromRGB(30, 30, 30),
         outline = Color3.fromRGB(60, 60, 60),
         tabholder = Color3.fromRGB(35, 35, 35),
         tabbutton = Color3.fromRGB(30, 30, 30),
-        tabselected = Color3.fromRGB(50, 50, 50)
+        tabselected = Color3.fromRGB(115, 0, 0
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		)
     }
 }
 
